@@ -6,6 +6,7 @@ body {
     width: 100wh;
     height: 90vh;
     background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+    /*background: linear-gradient(-45deg, #d4fc79, #96e6a1, #84fab0, #8fd3f4);*/
     background-size: 400% 400%;
     -webkit-animation: Gradient 15s ease infinite;
     -moz-animation: Gradient 15s ease infinite;
@@ -58,7 +59,7 @@ body {
     top: 0;
     left: 0;
     right: 0;
-    bottom: 40px;
+    bottom: 0;
 
     overflow: hidden;
 }
@@ -69,46 +70,10 @@ h1{
 
     margin-top: 10%;
 }
-#loading-container i{
-    padding: 50px;
-    font-size: 30px;
-    color: #FFF;
-    animation: Rotate 3s linear infinite;
+#loading-container svg{
+    margin: 10px;
 }
 
-@-webkit-keyframes Rotate {
-    0% {
-        transform: rotate(0);
-    }
-    50% {
-        transform: rotate(180deg);
-    }
-    100% {
-        transform: rotate(360deg);
-    }
-}
-@-moz-keyframes Rotate {
-    0% {
-        transform: rotate(0);
-    }
-    50% {
-        transform: rotate(180deg);
-    }
-    100% {
-        transform: rotate(360deg);
-    }
-}
-@keyframes Rotate {
-    0% {
-        transform: rotate(0);
-    }
-    50% {
-        transform: rotate(180deg);
-    }
-    100% {
-        transform: rotate(360deg);
-    }
-}
 @media only screen and (max-width: 600px){
     h1{
         font-size: 5em;
@@ -118,12 +83,18 @@ h1{
             mix-blend-mode: multiply;
         }
     }
-    .container{
-
-        background: none;
-    }
 }
 
+.social-media-container{
+    margin: 10px
+}
+.social-media-icon{
+    border-radius: 50%;
+}
+.social-media-container .social-media-icon svg{
+    width: 40px;
+    margin: 3px;
+}
 /* FOOTER */
 footer{
 	position: fixed;
