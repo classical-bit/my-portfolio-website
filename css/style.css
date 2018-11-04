@@ -110,3 +110,10 @@ footer{
     width: 30px;
     margin: 5px 0 5px 5px;
 }
+
+/* Background */
+.ball {
+    position: absolute;
+    border-radius: 100%;
+    opacity: 0.7;
+  }
