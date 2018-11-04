@@ -1,7 +1,8 @@
-body *{
+body * {
     margin: 0;
     padding: 0;
 }
+
 body {
     width: 100wh;
     height: 90vh;
@@ -19,9 +20,11 @@ body {
     0% {
         background-position: 0% 50%
     }
+
     50% {
         background-position: 100% 50%
     }
+
     100% {
         background-position: 0% 50%
     }
@@ -31,26 +34,31 @@ body {
     0% {
         background-position: 0% 50%
     }
+
     50% {
         background-position: 100% 50%
     }
-    100% {
-        background-position: 0% 50%
-    }
-}
-@keyframes Gradient {
-    0% {
-        background-position: 0% 50%
-    }
-    50% {
-        background-position: 100% 50%
-    }
+
     100% {
         background-position: 0% 50%
     }
 }
 
-.container{
+@keyframes Gradient {
+    0% {
+        background-position: 0% 50%
+    }
+
+    50% {
+        background-position: 100% 50%
+    }
+
+    100% {
+        background-position: 0% 50%
+    }
+}
+
+.container {
     background: rgb(70, 44, 44);
     text-align: center;
     mix-blend-mode: multiply;
@@ -63,49 +71,56 @@ body {
 
     overflow: hidden;
 }
-h1{
+
+h1 {
     font-family: 'Raleway', sans-serif;
     color: #ffffff;
     font-size: 10em;
 
     margin-top: 10%;
 }
-#loading-container svg{
+
+#loading-container svg {
     margin: 10px;
 }
 
-@media only screen and (max-width: 600px){
-    h1{
+@media only screen and (max-width: 600px) {
+    h1 {
         font-size: 5em;
     }
-    @supports (mix-blend-mode: multiply){
-        .container{
+
+    @supports (mix-blend-mode: multiply) {
+        .container {
             mix-blend-mode: multiply;
         }
     }
 }
 
-.social-media-container{
+.social-media-container {
     margin: 10px
 }
-.social-media-icon{
+
+.social-media-icon {
     border-radius: 50%;
 }
-.social-media-container .social-media-icon svg{
+
+.social-media-container .social-media-icon svg {
     width: 40px;
     margin: 3px;
 }
+
 /* FOOTER */
-footer{
-	position: fixed;
-	left: 0;
-	bottom: 0;
-	width: 100%;
-	height: 40px;
-	background: #212121;
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    background: #212121;
     mix-blend-mode: multiply;
 }
-.footer-social-media{
+
+.footer-social-media {
     float: left;
     width: 30px;
     margin: 5px 0 5px 5px;
@@ -116,4 +131,37 @@ footer{
     position: absolute;
     border-radius: 100%;
     opacity: 0.7;
-  }
+}
+
+/* Button */
+button {
+    display: inline-block;
+    padding: 1em 3em;
+    border: 0.16em solid #FFFFFF;
+    margin: 0 0.3em 0.3em 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #FFFFFF;
+    background: none;
+    text-align: center;
+    transition: all 0.15s;
+}
+
+button:hover {
+    color: #DDDDDD;
+    border-color: #DDDDDD;
+}
+
+button:active {
+    color: #BBBBBB;
+    border-color: #BBBBBB;
+}
+
+@media all and (max-width:30em) {
+    button {
+        display: block;
+        margin: 0.4em auto;
+    }
+}
